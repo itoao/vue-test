@@ -3,6 +3,7 @@ import App from './App.vue'
 import smoothScroll from 'vue-smoothscroll'
 import VueTyperPlugin from 'vue-typer'
 import VueParticles from 'vue-particles'
+import router from './router/index'
 Vue.use(smoothScroll)
 Vue.use(VueTyperPlugin)
 Vue.use(VueParticles)
@@ -26,5 +27,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
