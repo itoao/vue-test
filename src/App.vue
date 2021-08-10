@@ -65,7 +65,12 @@
 
 
 
-   
+    <About id="about"></About>
+    <Skill id="skill"></Skill>
+    <Work id="work"></Work>
+    <Contact id="contact"></Contact>
+
+    <Footer></Footer>
   </div>
 </template>
 
@@ -116,7 +121,9 @@ export default {
   background-size: cover;
   height: 100vh;
 }
-
+:hover .target {
+			transform: rotateZ( 360deg ) ;
+		}
 #main{
   position: absolute;
   top: 30%;

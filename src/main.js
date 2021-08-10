@@ -3,7 +3,7 @@ import App from './App.vue'
 import smoothScroll from 'vue-smoothscroll'
 import VueTyperPlugin from 'vue-typer'
 import VueParticles from 'vue-particles'
-import router from './router/index'
+import router from './router'
 Vue.use(smoothScroll)
 Vue.use(VueTyperPlugin)
 Vue.use(VueParticles)

@@ -11,8 +11,8 @@ const routes = [
   },
   {
     path: "/work",
-    name: 'Work',
-    component: () => import(/* webpackChunkName: "about" */ '../components/Work.vue')
+    component: Work,
+
   }
 ];
 
@@ -23,4 +23,5 @@ const router = new VueRouter({
 });
 
 
-export default router
+export default router;
+
