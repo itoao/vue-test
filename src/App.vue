@@ -1,78 +1,21 @@
 <template>
+
   <div id="app">
-    <Header id="header"></Header>
-    <div id="app">
-    <div class="res"><h1 class="res-title" @click="clickSmoothScroll('#app')">ao ito</h1></div>
-    <div class="nav-res">
-        <a href="#" class="link-content" @click="clickSmoothScroll('#app')">
-          <font-awesome-icon icon="image" class="nav-icon"/>
-          <p class="comment">Top</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#about')">
-          <font-awesome-icon icon="user-circle" class="nav-icon"/>
-          <p class="comment">About</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#skill')">
-          <font-awesome-icon icon="code" class="nav-icon"/>
-          <p class="comment">Skill</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#work')">
-          <font-awesome-icon icon="hammer" class="nav-icon"/>
-          <p class="comment">Works</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#contact')">
-          <font-awesome-icon icon="handshake" class="nav-icon"/>
-          <p class="comment">Contact</p>
-        </a>
-      </div>
-
-</div>
-
-
-    <div class="res"><h1 class="res-title" @click="clickSmoothScroll('#app')">Shoma's Profile</h1></div>
-    <div class="nav-res">
-        <a href="#" class="link-content" @click="clickSmoothScroll('#app')">
-          <font-awesome-icon icon="image" class="nav-icon"/>
-          <p class="comment">Top</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#about')">
-          <font-awesome-icon icon="user-circle" class="nav-icon"/>
-          <p class="comment">About</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#skill')">
-          <font-awesome-icon icon="code" class="nav-icon"/>
-          <p class="comment">Skill</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#work')">
-          <font-awesome-icon icon="hammer" class="nav-icon"/>
-          <p class="comment">Works</p>
-        </a>
-        <a href="#" class="link-content" @click="clickSmoothScroll('#contact')">
-          <font-awesome-icon icon="handshake" class="nav-icon"/>
-          <p class="comment">Contact</p>
-        </a>
-    </div>
-
-    <div id="top">
-        <div id="main">
-          <vue-typer :text="['\nWelcome to my portfolio. \n']" class="top-text" :repeat='0'
-          :preTypeDelay="1000" :typeDelay="120" :preEraseDelay="5000" :eraseDelay="2000"></vue-typer>
-        </div>
-        <vue-particles color="#dedede" class="particles"></vue-particles>
-
-
-    </div>
-
-
-
-    <About id="about"></About>
-    <Skill id="skill"></Skill>
-    <Work id="work"></Work>
-    <Contact id="contact"></Contact>
-
-    <Footer></Footer>
+    <header></header>
+    <router-view />
   </div>
+
 </template>
+<script>
+import header from "./components/header";
+export default {
+  components: {
+    header,
+  },
+};
+</script>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue-particles-use@1.0.1/dist/vue-particles-use.umd.min.js"></script>

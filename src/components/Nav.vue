@@ -3,7 +3,7 @@
 
     <a href="#" class="nav-button" @click="clickSmoothScroll('#about')">About</a>
     <a href="#" class="nav-button" @click="clickSmoothScroll('#skill')">Skill</a>
-    <router-link to="/Work>Works</router-link>
+    <router-link to="/Work">Works</router-link>
     <a href="#" class="nav-button" @click="clickSmoothScroll('#contact')">Contact</a>
   </div>
 </template>

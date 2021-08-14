@@ -7,13 +7,17 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: "/",
-    component: App
+    component: App,
   },
   {
     path: "/work",
     component: Work,
 
-  }
+  },
+  {
+    path: "/contact",
+    component: Contact,
+  },
 ];
 
 const router = new VueRouter({
